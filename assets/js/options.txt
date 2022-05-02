@@ -1,0 +1,28 @@
+function openOptions(optionName) {
+
+  switch (optionName) {
+
+    case "donor_reg":
+      location.href = "donor-reg.html";
+      break;
+    case "find_donor":
+      location.href = "find-donor.html";
+      break;
+	case "delete_donors_data":
+		var nav = confirm("Are you really want to delete the donors data?");
+		if ( nav == true) {
+			localStorage.removeItem( "strDonors");
+			alert( 'Donors data has been deleted successfully!');
+			location.href = "options.html";
+		} else {
+			return false;
+		}
+      location.href = "options.html";
+      break; 	  
+	case "home":
+      location.href = "index.html";
+      break;	  
+    default:
+      location.href = "page-not-found.html";
+  }
+}

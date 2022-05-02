@@ -1,0 +1,137 @@
+select {
+	padding: 5px;
+}
+.heading {
+  font: 28px monospace;
+  margin: 26px 0 10px 509px;
+  color: #ff0000;
+}
+
+.headings {
+  text-align: center;
+  font: 13px Arial, Helvetica, sans-serif;
+  color: #fdfdfd;
+  background-color: #5b8da5;
+}
+
+input {
+  border: 0;
+  margin-right: 5px;
+  background: transparent;
+  border-bottom: 1px solid black;
+  width: 80px;
+  padding: 8px;
+}
+
+button {
+  background-color: #ff0000;
+  border: 0;
+  padding: 6px 9px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font: 15px monospace;
+}
+
+.register-btn {
+  margin-left: 105px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 25px;
+}
+
+li {
+  display: block;
+  padding: 5px 10px;
+  float: left;
+  width: 14%;
+}
+
+.clear {
+  clear: both
+}
+
+form {
+  margin-left: 384px;
+  margin-right: 267px;
+}
+
+.form-style-2 {
+	margin-left: 385px;	
+	padding: 20px 12px 10px 20px;
+	font: 13px Arial, Helvetica, sans-serif;
+}
+
+.form-style-2-heading {
+  font-weight: bold;
+  font-style: italic;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 20px;
+  font-size: 15px;
+  padding-bottom: 3px;
+}
+
+.form-style-2 label {
+  display: block;
+  margin: 0px 0px 18px 0px;
+}
+
+.form-style-2 label > span {
+  width: 100px;
+  font-weight: bold;
+  float: left;
+  padding-top: 8px;
+  padding-right: 5px;
+}
+
+.form-style-2 span.required {
+  color: red;
+}
+
+.form-style-2 .mobile-number {
+  width: 187px;
+  text-align: center;
+}
+
+.form-style-2 input.input-field,
+.form-style-2 .select-field {
+  width: 37%;
+}
+
+.form-style-2 input.input-field,
+.form-style-2 .mobile-number {
+  border: 1px solid #C2C2C2;
+  -moz-box-shadow: 1px 1px 4px #EBEBEB;
+  -webkit-box-shadow: 1px 1px 4px #EBEBEB;
+  box-shadow: 1px 1px 4px #EBEBEB;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 7px;
+}
+
+.form-style-2 .input-field:focus,
+.form-style-2 .mobile-number:focus {
+  border: 1px solid #0C0;
+}
+
+label.status {
+  margin-bottom: 28px;
+}
+
+.status-checkbox {
+  width: auto;
+  margin: 9px 5px 0 1px;
+}
+
+.status .status-value {
+  float: right;
+  padding-right: 405px;
+  font-weight: normal;
+}
+#age {
+	width: 50px;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="assets/css/common/blood_donation.css">
+	<link rel="stylesheet" href="assets/css/find_donor.css">	
+	<script src="assets/js/find-donor.js"></script>
+</head>
+
+<body bgcolor="gray">
+  <h1 class="heading">Find Blood Donor</h1>
+
+  <div class="form-style-2">
+     
+      <label for="bloodGroup">
+        <span> Blood Group <span class="required">*</span></span>
+		<select id="bloodGroup" name="bloodGroup">
+			<option value="select">Select</option>
+			<option value="O-">O-</option>
+			<option value="O+">O+</option>
+			<option value="A-">A-</option>
+			<option value="A+">A+</option>
+			<option value="B-">B-</option>
+			<option value="B+">B+</option>
+			<option value="AB-">AB-</option>
+			<option value="AB+">AB+</option>	    
+		</select>        
+      </label>
+		
+		<label for="country">
+			<span>Country<span class="required">*</span></span>
+			<select id="country" name="country" onchange=getStates(this)>
+			 <option value="select">Select</option>
+			  <option value="India">India</option>
+			  <option value="US">US</option>
+			  <option value="UK">UK</option>			  
+			</select>        
+		</label>
+		<label for="state">
+			<span>State<span class="required">*</span></span>
+			<select id="state" name="state" onchange=getDistrict(this)></select>        
+		</label>
+		<label for="district">
+			<span>District<span class="required">*</span></span>
+			<select id="district" name="district" onchange=getCity(this)></select>        
+		</label>
+		<label for="city">
+			<span>City<span class="required">*</span></span>
+			<select id="city" name="city"></select>        
+		</label>
+      <button class="register-btn" onclick="findDonor();">Find</button>
+	  <button class="register-btn" onclick="goToOptions();">Go To Options</button>
+  </div>
+  <div id="click-record-msg"> Click on below any one record to request for blood! </div>
+  <div id="no-record-msg">No records found!</div>
+  <div id="data"></div>
+  <div>
+
+  </div
+</body>
+
+</html>

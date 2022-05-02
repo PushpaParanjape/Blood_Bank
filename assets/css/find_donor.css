@@ -1,0 +1,38 @@
+table {
+    font: 16px monospace;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;    
+    padding: 8px;
+}
+td {
+	cursor: pointer;	
+}
+
+#click-record-msg {
+    text-align: center;
+    padding: 6px;
+    margin-top: 18px;
+    margin-bottom: 22px;
+    background-color: darkslategray;
+    color: cornsilk;
+    font: bold 15px monospace;
+	display:none;
+}
+
+#no-record-msg{
+	text-align: center;
+    padding: 6px;
+    margin-top: 18px;
+    margin-bottom: 22px;
+	margin-right:114px;
+    color: red;
+    font: bold 15px monospace;
+	display:none;
+}
+#data{
+	display:none;
+}

@@ -1,0 +1,20 @@
+.index-heading {
+    text-align: center;
+    color: red;
+    font-family: monospace;
+    font-size: 36px;
+}
+.blood-donation-img {
+	width: 40%;
+    height: 40%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	padding-top: 10px;
+    padding-bottom: 10px;
+	cursor: pointer;
+}
+
+.donation-img-container {
+	background-color: darkslategrey;
+}

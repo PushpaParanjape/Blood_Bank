@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="assets/css/common/blood_donation.css">
+  <script src="assets/js/donor_reg.js"></script>
+</head>
+
+<body bgcolor="gray">
+  <h1 class="heading">Blood Donor Registration</h1>
+
+  <div class="form-style-2">
+    
+      <label for="fullName">
+        <span> Full Name </span>
+        <input type="text" class="input-field" id="fullName" name="fullName" maxlength="35" onblur="validateFname(this)" />
+      </label>
+
+      <label for="bloodGroup">
+        <span> Blood Group</span>
+		<select id="bloodGroup" name="bloodGroup">
+			<option value="select">Select</option>
+			<option value="O-">O-</option>
+			<option value="O+">O+</option>
+			<option value="A-">A-</option>
+			<option value="A+">A+</option>
+			<option value="B-">B-</option>
+			<option value="B+">B+</option>
+			<option value="AB-">AB-</option>
+			<option value="AB+">AB+</option>	  
+		</select>        
+      </label>
+		<label>
+        <span>Age</span>
+        <input type="text" id="age" class="mobile-number" name="age" maxlength="2"  onblur="validateMobile(this)"/>
+      </label>
+	  <label for="gender">
+			<span>Gender</span>
+			<select id="gender" name="gender" >
+			  <option value="Male">Male</option>
+			  <option value="Female">Female</option>			  		  
+			</select>        
+		</label>
+		<label for="country">
+			<span>Country</span>
+			<select id="country" name="country" onchange=getStates(this)>
+			 <option value="select">Select</option>
+			  <option value="India">India</option>
+			  <option value="US">US</option>
+			  <option value="UK">UK</option>			  
+			</select>        
+		</label>
+		<label for="state">
+			<span>State</span>
+			<select id="state" name="state" onchange=getDistrict(this)></select>        
+		</label>
+		<label for="district">
+			<span>District</span>
+			<select id="district" name="district" onchange=getCity(this)></select>        
+		</label>
+		<label for="city">
+			<span>City</span>
+			<select id="city" name="city"></select>        
+		</label>
+      <label>
+        <span>Mobile Number </span>
+        <input type="text" id="mobile" class="mobile-number" name="phone" maxlength="10"  onblur="validateMobile(this)"/>
+      </label>
+      
+      <label for="email">
+        <span> Email</span>
+        <input type="email" id="email" class="input-field" name="email"  onblur="validateEmail(this)"/>
+
+      </label>
+      <button class="register-btn" onclick="registerDonor();">Register</button>
+		<button class="register-btn" onclick="goToOptions();">Go To Options</button>
+  </div>
+</body>
+
+</html>
